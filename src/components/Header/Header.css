@@ -74,9 +74,9 @@
    ESTILOS DESKTOP (768px+)
    ========================================================== */
 @media screen and (min-width: 768px) {
-    .logo {
-      width: 90px
-    }
+  .logo {
+    width: 90px;
+  }
 
   .header {
     padding: 0 5%;
@@ -87,7 +87,6 @@
   }
 
   .nav {
-    /* RESET DOS ESTILOS MOBILE */
     display: flex !important;
     position: static;
     opacity: 1;
@@ -106,36 +105,38 @@
     gap: 30px;
   }
 
-  .btn-header {
-    background-color: var(--secondary);
-    color: var(--white);
-    padding: 10px 20px;
-    margin: 0 0 0 50px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background 0.3s ease;
-  }
-
   .nav ul li a {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
     transition: color 0.3s ease;
+    color: var(--black);
   }
 
   .nav ul li a:hover {
     color: var(--secondary);
   }
 
-  .btn-header:hover {
-    background-color: rgb(235, 224, 12);
+  .nav ul li a.btn-header {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .nav ul li a.btn-header:hover {
+    background-color: var(--primary);
+    color: var(--black);
   }
 }
 
 @media screen and (min-width: 1024px) {
-    .logo {
-        width: 120px;
-    }
+  .logo {
+    width: 130px;
+  }
 }
