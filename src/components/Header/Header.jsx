@@ -20,18 +20,18 @@ export function Header() {
       <nav className={active ? "nav nav-active" : "nav"}>
         <ul>
           <li>
-            <a href="#home" onClick={closeMenu}>
-              Home
-            </a>
-          </li>
-          <li>
             <a href="#servicos" onClick={closeMenu}>
               Serviços
             </a>
           </li>
           <li>
-            <a href="#contato" onClick={closeMenu}>
-              Contato
+            <a href="#produtos" onClick={closeMenu}>
+              Produtos
+            </a>
+          </li>
+          <li>
+            <a href="#sobre" onClick={closeMenu}>
+              sobre
             </a>
           </li>
           <li>
