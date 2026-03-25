@@ -1,0 +1,83 @@
+/* ==========================================================
+   SEÇÃO PRODUTOS (MOBILE-FIRST)
+   ========================================================== */
+
+.produtos {
+  padding: 60px 5%;
+  background-color: var(--off-white);
+  text-align: center;
+}
+
+.produtos h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.produtos h2 span {
+  color: var(--secondary);
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-produto {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+  transform: translateY(-8px);
+}
+
+.prod-img {
+  width: 100%;
+  height: 180px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marca-prod {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card-produto h4 {
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.btn-consultar {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--black);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.btn-consultar:hover {
+  background-color: var(--secondary);
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero'; 
-import { Servicos } from './components/Servicos/Servicos'
-import { Contato } from './components/Contato/Contato'
+import { Servicos } from './components/Servicos/Servicos';
+import { Contato } from './components/Contato/Contato';
+import { Produtos } from './components/Produtos/Produtos';
+import { Sobre } from './components/Sobre/Sobre';
+import { Footer } from './components/Footer/Footer'
 import './index.css'; 
 
 export default function App() {
@@ -11,7 +14,10 @@ export default function App() {
       <Header />
       <Hero />
       <Servicos />
+      <Produtos />
+      <Sobre />
       <Contato />
+      <Footer />
 
       <a
       href='https://wa.me/5512997687950'

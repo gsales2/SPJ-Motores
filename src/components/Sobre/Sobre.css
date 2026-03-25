@@ -1,0 +1,78 @@
+/* ==========================================================
+   SEÇÃO SOBRE (MOBILE-FIRST)
+   ========================================================== */
+
+.sobre {
+  padding: 60px 5%;
+  background-color: var(--white);
+}
+
+.container-sobre {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 0 var(--primary);
+}
+
+.sobre-texto h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sobre-texto h2 span {
+  color: var(--secondary);
+}
+
+.sobre-texto p {
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.sobre-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.sobre-stats div {
+  text-align: center;
+}
+
+.sobre-stats strong {
+  display: block;
+  font-size: 2rem;
+  color: var(--secondary);
+  font-family: "Sora", sans-serif;
+}
+
+.sobre-stats span {
+  font-size: 0.9rem;
+  color: #777;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .container-sobre {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .sobre-texto {
+    flex: 1;
+  }
+
+  .sobre-img {
+    flex: 1;
+  }
+}
