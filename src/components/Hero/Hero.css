@@ -1,0 +1,76 @@
+/* ==========================================================
+   ESTILO PADRÃO (MOBILE)
+   ========================================================== */
+
+.hero {
+  padding: 100px 20px;
+  background:
+    linear-gradient(rgba(0, 0, 00, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/hero.avif");
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-content h1 span {
+  color: var(--secondary);
+}
+
+.hero-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  max-width: 280px;
+  margin: 0 auto 30px auto;
+  color: var(--off-white);
+  line-height: 1.5;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 16px 32px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(254, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 150px 10%;
+        min-height: 70vh;
+        background-attachment: fixed;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        max-width: 850px;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        max-width: 550px;
+    }
+
+    .bent-hero:hover {
+        background-color: #d10000;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(254, 0, 0, 0.4);
+    }
+}
