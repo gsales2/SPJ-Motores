@@ -1,12 +1,13 @@
 import React from "react";
 import './Sobre.css'
+import fotoOficina from '../../assets/hero.avif';
 
 export function Sobre() {
     return (
         <section className="sobre" id="sobre">
             <div className="container-sobre">
                 <div className="sobre-img">
-                    <img src="../../src/assets/hero.avif" alt="Oficina SPJ Motores"/>
+                    <img src={fotoOficina} alt="Oficina SPJ Motores"/>
                 </div>
                 <div className="sobre-texto">
                     <h2>Sobre a <span>SPJ Motores</span></h2>
