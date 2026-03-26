@@ -58,12 +58,11 @@ export function Contato() {
                     <h3>Envie uma <span>Mensagem</span></h3>
 
                     <div className="input-group">
-                        {/* O atributo 'name' deve ser igual ao que você colocou no template do EmailJS */}
-                        <input type="text" name="from_name" placeholder="Seu Nome" required />
+                        <input type="text" name="from_name" placeholder="Seu Nome" aria-label="Nome" required />
                     </div>
 
                     <div className="input-group">
-                        <input type="email" name="reply_to" placeholder="Seu E-mail" required />
+                        <input type="email" name="reply_to" placeholder="Seu E-mail" aria-label="Email" required />
                     </div>
 
                     <div className="input-group">
