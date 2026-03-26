@@ -20,7 +20,7 @@ export function Produtos() {
         },
         {
             nome: 'Selos Mecânicos',
-            marca: 'Diersos Tamanhos',
+            marca: 'Diversos Tamanhos',
             img: fotoSelos
         },
         {
