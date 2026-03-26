@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser'
 import './Contato.css'
 
 export function Contato() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+        emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+            .then((result) => {
+                console.log(result.text);
+                alert('Mensagem enviada com sucesso! A SPJ Motores entrará em contato.');
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+                alert('Erro ao enviar e-mail. Tente novamente mais tarde.')
+            });
+    };
+
     return (
         <section className="contato" id="contato">
             <div className="container-contato">
@@ -33,8 +54,26 @@ export function Contato() {
                         </div>
                     </div>
                 </div>
+                <form ref={form} onSubmit={sendEmail} className="form-contato">
+                    <h3>Envie uma <span>Mensagem</span></h3>
 
-                <div className="form-contato">
+                    <div className="input-group">
+                        {/* O atributo 'name' deve ser igual ao que você colocou no template do EmailJS */}
+                        <input type="text" name="from_name" placeholder="Seu Nome" required />
+                    </div>
+
+                    <div className="input-group">
+                        <input type="email" name="reply_to" placeholder="Seu E-mail" required />
+                    </div>
+
+                    <div className="input-group">
+                        <textarea name="message" placeholder="Como podemos ajudar?" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" className="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+            {/* <div className="form-contato">
                     <h3>Envie uma <span>Mensagem</span></h3>
                     <div className="input-group">
                         <input type="text" placeholder="Seu Nome" required />
@@ -46,8 +85,7 @@ export function Contato() {
                         <textarea placeholder="Como podemos ajudar?" rows='5' required></textarea>
                     </div>
                     <button type="submit" className="btn-enviar">Enviar Mensagem</button>
-                </div>
-            </div>
-        </section>
+                </div> */}
+        </section >
     )
 }

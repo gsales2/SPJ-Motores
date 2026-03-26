@@ -6,6 +6,7 @@ import { Contato } from './components/Contato/Contato';
 import { Produtos } from './components/Produtos/Produtos';
 import { Sobre } from './components/Sobre/Sobre';
 import { Footer } from './components/Footer/Footer'
+import { Mapa } from './components/Mapa/Mapa'
 import './index.css'; 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Produtos />
       <Sobre />
       <Contato />
+      <Mapa />
       <Footer />
 
       <a
