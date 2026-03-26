@@ -1,27 +1,32 @@
 import React from "react";
 import './Produtos.css'
+import fotoMotor from '../../assets/motor.webp';
+import fotoBomba from '../../assets/selos.webp';
+import fotoSelos from '../../assets/bomba.webp';
+import fotoMotor2 from '../../assets/motor2.webp';
+
 
 export function Produtos() {
     const listaProdutos = [
         {
             nome: 'Motores Monofásicos',
             marca: 'WEG / Voges',
-            img: 'caminho-da-img'
+            img: fotoMotor
         },
         {
             nome: 'Bombas Centrifugas',
             marca: 'Schneider / Darka',
-            img: 'caminho-da-img'
+            img: fotoBomba
         },
         {
             nome: 'Selos Mecânicos',
             marca: 'Diersos Tamanhos',
-            img: 'caminho-da-img'
+            img: fotoSelos
         },
         {
             nome: 'Motores Monofásicos',
             marca: 'Partida e Marcha',
-            img: 'caminho-da-img'
+            img: fotoMotor2
         },
     ];
 
@@ -33,8 +38,7 @@ export function Produtos() {
                     {listaProdutos.map((prod, index) => (
                         <div className="card-produto" key={index}>
                             <div className="prod-img">
-                                {/* <img src={prod.img} alt={prod.nome} /> */}
-                                <span style={{color: '#999', fontSize: '0.8rem'}}>Foto em breve</span>
+                                <img src={prod.img} alt={prod.nome} />
                             </div>
                                 <h4>{prod.nome}</h4>
                                 <span className="marca-prod">{prod.marca}</span>

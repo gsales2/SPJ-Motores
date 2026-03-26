@@ -44,12 +44,24 @@
 .prod-img {
   width: 100%;
   height: 180px;
-  background-color: #f0f0f0;
   border-radius: 8px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card-produto:hover .prod-img img {
+  transform: scale(1.1);
 }
 
 .marca-prod {
