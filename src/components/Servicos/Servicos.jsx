@@ -10,7 +10,7 @@ export function Servicos() {
         },
         {
             titulo: "Bombas d'Água",
-            descricao: "Especialistas em bombas de irrigação, reservatório, piscina e sistemas de incêndio.",
+            descricao: "Manutenção e vendas de bombas d'agua de diversas marcas.",
             icone: "fa-solid fa-droplet"
         },
         {
