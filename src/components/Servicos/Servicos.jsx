@@ -5,7 +5,7 @@ export function Servicos() {
     const listaServicos = [
         {
             titulo: "Motores Elétricos",
-            descricao: "Manutenção em geral, troca de rolamentos, pintura e rebobinamento (isolamento B/F/H).",
+            descricao: "Rebobinamento, troca de rolamentos e manutenção em geral (isolamento B/F/H).",
             icone: "fa-solid fa-gear"
         },
         {

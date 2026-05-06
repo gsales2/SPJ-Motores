@@ -21,7 +21,7 @@ export function Contato() {
                         <i className="fa-brands fa-whatsapp"></i>
                         <div>
                             <h4>WhatsApp</h4>
-                            <p>(12) 998149-9071</p>
+                            <p>(12) 98149-9071</p>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@ export function Contato() {
                         <i className="fa-solid fa-clock"></i>
                         <div>
                             <h4>Horário de Atendimento</h4>
-                            <p>Segunda a Sexta: 08h às 18h</p>
+                            <p>Segunda a Sexta: 08h às 12h - 13h30 às 17h30</p>
                         </div>
                     </div>
                 </div>
