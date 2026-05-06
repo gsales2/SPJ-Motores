@@ -12,9 +12,9 @@ export function Footer() {
                     <img src={logo} alt="SPJ Motores" className="footer-logo" />
                     <p>Especialistas em manutenção de motores elétricos e bombas d'agua com mais de 10 anos de experiência em Jacareí.</p>
                     <div className="footer-socials">
-                        <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/spj_motores/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/spj.motores" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/55129981499071" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 

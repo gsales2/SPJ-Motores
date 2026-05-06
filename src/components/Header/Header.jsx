@@ -35,7 +35,7 @@ export function Header() {
             </a>
           </li>
           <li>
-            <a href="#orcamento" className="btn-header" onClick={closeMenu}>
+            <a href="#contato" className="btn-header" onClick={closeMenu}>
               Orçamento
             </a>
           </li>

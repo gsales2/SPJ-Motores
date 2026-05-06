@@ -1,32 +1,56 @@
 import React from "react";
 import './Produtos.css'
-import fotoMotor from '../../assets/motor.webp';
-import fotoBomba from '../../assets/selos.webp';
-import fotoSelos from '../../assets/bomba.webp';
-import fotoMotor2 from '../../assets/motor2.webp';
+import fotoRolamento from '../../assets/rolamento.webp';
+import fotoThorq from '../../assets/thorq.jpeg';
+import fotoPeriferica from '../../assets/motobomba_periferica.webp';
+import fotoBombaPiscina from '../../assets/bomba_piscina.webp';
+import fotoNautilus from '../../assets/motobomba_nautilus.jpeg';
+import fotoBoia from '../../assets/boianivel.jpeg';
+import fotoSappo from '../../assets/bomba_sappo.webp';
+import fotoSeta from '../../assets/seta.png';
 
 
 export function Produtos() {
     const listaProdutos = [
         {
-            nome: 'Motores Monofásicos',
-            marca: 'WEG / Voges',
-            img: fotoMotor
+            nome: 'Rolamentos NSK',
+            marca: 'NSK Brasil',
+            img: fotoRolamento
         },
         {
-            nome: 'Bombas Centrifugas',
-            marca: 'Schneider / Darka',
-            img: fotoBomba
+            nome: 'Motores de Alta Performance',
+            marca: 'THORQ3',
+            img: fotoThorq
         },
         {
-            nome: 'Selos Mecânicos',
-            marca: 'Diversos Tamanhos',
-            img: fotoSelos
+            nome: 'Motobombas Periféricas',
+            marca: 'Claw',
+            img: fotoPeriferica
         },
         {
-            nome: 'Motores Monofásicos',
-            marca: 'Partida e Marcha',
-            img: fotoMotor2
+            nome: 'Motobombas para Piscina',
+            marca: 'SODRAMAR',
+            img: fotoBombaPiscina
+        },
+        {
+            nome: 'Motobombas Autoescorvantes',
+            marca: 'Nautilus',
+            img: fotoNautilus
+        },
+        {
+            nome: 'Boia de Nível',
+            marca: 'ANAUGER',
+            img: fotoBoia
+        },
+        {
+            nome: 'Bombas Sappo',
+            marca: 'ANAUGER',
+            img: fotoSappo
+        },
+        {
+            nome: 'E MUITO MAIS',
+            marca: 'Clique aqui e descubra',
+            img: fotoSeta
         },
     ];
 
